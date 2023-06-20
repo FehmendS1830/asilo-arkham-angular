@@ -33,7 +33,7 @@ import { Router } from '@angular/router';
 
   onEntrar() {
  // verificar se o usuário e a senha estão corretos
- if (this.username === "Maria" && this.password === "123") {
+ if (this.username === "Maria" && this.password === "123", this.username === "Alencar" && this.password === "321") {
   this.mostrarMenuEmitter.emit(true);
   this.router.navigate(['/pacientes']);
 } else {
