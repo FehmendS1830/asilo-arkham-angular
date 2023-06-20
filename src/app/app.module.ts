@@ -9,6 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UsuarioService } from './login/service/usuario.service';
 
 
 
@@ -26,7 +27,10 @@ import { AppComponent } from './app.component';
     MatDividerModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [
+UsuarioService,
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
